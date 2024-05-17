@@ -1,4 +1,4 @@
-# DubleLee
+# DubleLee Project
 
 ## Handmade Shoppingmall Site
 초기 레이아웃 사진
