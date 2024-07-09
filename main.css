@@ -17,6 +17,11 @@ a {
     color: black;
 }
 
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+
 /* header -> 로고, 검색창, 마이페이지 */
 header {
     width: 100%;
@@ -24,6 +29,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: #fff;
+    padding-top: 10PX;
 }
 
 .logo {
@@ -140,6 +146,7 @@ header {
 
 /* nav = 카테고리 */
 nav {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,12 +223,14 @@ section {
     background-color: rgb(243, 243, 243);
     width: 100%;
     height: calc(80% - 10px);
+    /* 위 아래 여백 확보 */
+    padding: 10px 0 40px 0;
     display: flex;
     justify-content: center;
 }
 
 .item_list {
-    width: 90%;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
