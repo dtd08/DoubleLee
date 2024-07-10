@@ -19,7 +19,6 @@ a {
 
 #wrap {
     width: 100%;
-    height: 100%;
 }
 
 /* header -> 로고, 검색창, 마이페이지 */
@@ -147,6 +146,7 @@ header {
 /* nav = 카테고리 */
 nav {
     width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,6 +175,7 @@ nav a {
 /* main - 이미지 슬라이드(광고)*/
 main {
     width: 100%;
+    height: 400px;
     padding: 20px 0;
     background-color: #fff;
 }
@@ -222,7 +223,7 @@ main {
 section {
     background-color: rgb(243, 243, 243);
     width: 100%;
-    height: calc(80% - 10px);
+    height: calc(100% - 580px);
     /* 위 아래 여백 확보 */
     padding: 10px 0 40px 0;
     display: flex;
@@ -230,47 +231,65 @@ section {
 }
 
 .item_list {
-    width: 70%;
+    width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .item_box {
     display: flex;
-    float: left;
-    margin: 30px auto 0;
+    margin: 30px auto;
     background-color: #fff;
-    border-radius: 20px;
-    padding: 5px;
-    width: 500px;
-    height: 220px;
+    border-radius: 15px;
+    width: 400px;
+    height: 180px;
+    align-items: center;
 }
 
 .item_box:hover {
     box-shadow: inset 0 0 15px #FFBE98;
 }
 
+.item_img a {
+    display: inline-block;
+    padding: 15px;
+    width: 170px;
+    height: 170px;
+}
+
 .item_img img {
-    padding: 10px;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
 
 .item_info {
-    float: left;
-    margin-top: 40px;
-    padding-left: 10px;
+    width: 100%;
+    height: 160px;
+    padding: 20px 0 15px 10px;
 }
 
 .name {
-    font-size: 20pt;
+    width: 100%;
+    height: 70%;
+    font-size: 15pt;
     font-weight: bold;
     color: saddlebrown;
+    display: flex;
+    align-items: top;
 }
 
 .where {
-    font-size: 15pt;
-    margin-top: 20px;
+    width: 100%;
+    height: 15%;
+    font-size: 10pt;
+    align-items: bottom;
+}
+
+.price {
+    width: 100%;
+    height: 15%;
+    font-size: 10pt;
+    align-items: bottom;
 }
 
 
@@ -278,7 +297,7 @@ section {
 footer {
     background-color: #fff;
     display: flex;
-    height: 10px;
+    height: 30px;
 }
 
 .footer-copyright {
