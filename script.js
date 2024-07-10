@@ -17,12 +17,23 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
+
 /// my page 안에 카테고리 자연스러운 드롭 다운 
 const categories = document.querySelectorAll(".cgory");
 
-categories.addEventListener("mouseover", function () {
-    categories.querySelectorAll()
-});
+categories.forEach(item => {
+    item.addEventListener("mouseover", function() {
+        const drop = this.querySelector(".dropdown")
+        drop.style.height = "105px";
+    });
+}); // 마우스 올렸을 때
+
+categories.forEach(item => {
+    item.addEventListener("mouseout", function() {
+        const drop = this.querySelector(".dropdown")
+        drop.style.height = "0px";
+    });
+}); // 마우스 땠을 때
 
 
 
