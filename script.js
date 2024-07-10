@@ -15,9 +15,9 @@ const left_btn = document.querySelector(".left_btn");
 const right_btn = document.querySelector(".right_btn");
 
 
-function moveSlider(direction = -1) { // 슬라이더 이동
+function moveSlider() { // 슬라이더 이동
     slider_wrap.style.transition = "all 0.6s";
-    slider_wrap.style.marginLeft = direction * currentIdx * 100 + "%"; // 누른 방향에 따라 슬라이더 이동(기본적으로 오->왼 방향)
+    slider_wrap.style.marginLeft = -currentIdx * 100 + "%";
 }
 
 function stopSlider() { // 슬라이더 이동 멈춤
