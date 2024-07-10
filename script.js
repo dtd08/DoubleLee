@@ -1,5 +1,32 @@
-/// 이미지 슬라이더
+/// my page 열고 닫기
+document.addEventListener('DOMContentLoaded', function () {
+    const openBtn = document.getElementById('mypage_btn'); // open 버튼
+    const myPage = document.getElementById('mypage'); // open 버튼 누르면 나오는 my page 영역
+    const closeBtn = document.getElementById('close_btn'); // close 버튼
 
+    openBtn.addEventListener('click', function () {
+        myPage.classList.add('open');
+        // css에서 버튼 누르면 right: -300 에서 0으로 돌아올 수 있게 설정
+    });
+
+    closeBtn.addEventListener('click', function () {
+        myPage.classList.remove('open');
+        // 추가한 open을 지움으로써 다시 -300으로 돌아옴(닫힘)
+    });
+
+})
+
+
+/// my page 안에 카테고리 자연스러운 드롭 다운 
+const categories = document.querySelectorAll(".cgory");
+
+categories.addEventListener("mouseover", function () {
+    categories.querySelectorAll()
+});
+
+
+
+/// 이미지 슬라이더
 // 필요 변수 불러오기
 const origin_slide_time = 5000; // 원래 회전 시간
 const add_slide_time = 3000; // 추가 회전 시간
@@ -15,9 +42,9 @@ const left_btn = document.querySelector(".left_btn");
 const right_btn = document.querySelector(".right_btn");
 
 
-function moveSlider() { // 슬라이더 이동
+function moveSlider(direction = -1) { // 슬라이더 이동
     slider_wrap.style.transition = "all 0.6s";
-    slider_wrap.style.marginLeft = -currentIdx * 100 + "%";
+    slider_wrap.style.marginLeft = direction * currentIdx * 100 + "%"; // 누른 방향에 따라 슬라이더 이동(기본적으로 오->왼 방향)
 }
 
 function stopSlider() { // 슬라이더 이동 멈춤
