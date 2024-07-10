@@ -213,13 +213,17 @@ header {
     font-size: 13pt;
 }
 
-.cgory:hover .dropdown {
-    display: block;
-}
-
 .dropdown a:hover {
     border: 1px solid #e3e3e3;
     box-shadow: 0 0 10px rgb(161, 155, 155);
+}
+
+/* js용 css */
+.dropdown {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: all 400ms;
 }
 
 
