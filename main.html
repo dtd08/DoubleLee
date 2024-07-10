@@ -6,7 +6,7 @@
     <title>Double Lee</title>
     <script src="https://kit.fontawesome.com/c947027f5c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
-    <script src="script.js" defer></script>
+    <script type=text/javascript src="script.js" defer></script>
 </head>
 
 <body>
@@ -27,12 +27,72 @@
                 <button id="mypage_btn">My Page</button>
 
                 <div id="mypage" class="mypage">
-                    <button id="close_btn">close</button>
                     <ul>
                         <li><a href="logIn.html">SIGN IN</a></li>
                         <li><a href="signUp.html">SIGN UP</a></li>
                     </ul>
 
+                    <div class="custinfo">
+                        <img src="https://ifh.cc/g/lL0pWL.webp" alt="profile" width="70px">
+                        <span id="name">이서영님 (dd0627)</span>
+                        <div class="myitem">
+                            <p id="point">포인트 240p</p>
+                            <p id="coupon">쿠폰 10개</p>
+                        </div>
+                        <a href="#" id="order">주문/배송 조회</a>
+                    </div>
+
+                    <div class="all_category">
+                        <div class="cgory office">문구
+                            <div class="dropdown">
+                                <a href="#">필기류</a>
+                                <a href="#">공책</a>
+                                <a href="#">파일/바인더</a>
+                            </div>
+                        </div>
+
+                        <div class="cgory acs">악세사리
+                            <div class="dropdown">
+                                <a href="#">반지</a>
+                                <a href="#">귀걸이/피어싱</a>
+                                <a href="#">헤어악세사리</a>
+                            </div>
+                        </div>
+
+                        <div class="cgory clothes">의류
+                            <div class="dropdown">
+                                <a href="#">상의</a>
+                                <a href="#">하의</a>
+                                <a href="#">원피스/정장</a>
+                            </div>
+                        </div>
+
+                        <div class="cgory kids">유아동
+                            <div class="dropdown">
+                                <a href="#">완구/교구</a>
+                                <a href="#">분유/유아식</a>
+                                <a href="#">출산/육아용품</a>
+                            </div>
+                        </div>
+
+                        <div class="cgory hobby">취미
+                            <div class="dropdown">
+                                <a href="#">원예도구/재료</a>
+                                <a href="#">보드게임</a>
+                                <a href="#">캐릭터상품</a>
+                            </div>
+                        </div>
+
+                        <div class="cgory service">고객센터
+                            <div class="dropdown">
+                                <a href="#">자주묻는 질문</a>
+                                <a href="#">1:1 채팅 문의</a>
+                                <a href="#">취소/반품 안내</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="close_btn">close</button>
                 </div>
             </div>
         </header>
@@ -42,7 +102,6 @@
                 <li class="option"><a href="#">문구</a></li>
                 <li class="option"><a href="#">악세사리</a></li>
                 <li class="option"><a href="#">의류</a></li>
-                <li class="option"><a href="#">문구</a></li>
                 <li class="option"><a href="#">유아동</a></li>
                 <li class="option"><a href="#">취미</a></li>
             </ul>
@@ -50,20 +109,23 @@
 
         <main>
             <div class="event_slider">
-                <div class="images">
-                    <div class="slide">
-                        <img src="https://ifh.cc/g/BAzZrw.sjpg" alt="img1">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ifh.cc/g/nl7Zk3.png" alt="img2">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ifh.cc/g/y0XKhj.jpg" alt="img3">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ifh.cc/g/8MAt0L.png" alt="img4">
+                <div class="wrapper">
+                    <div class="images">
+                        <div class="slide">
+                            <img src="https://ifh.cc/g/BAzZrw.sjpg" alt="img1">
+                        </div>
+                        <div class="slide">
+                            <img src="https://ifh.cc/g/nl7Zk3.png" alt="img2">
+                        </div>
+                        <div class="slide">
+                            <img src="https://ifh.cc/g/y0XKhj.jpg" alt="img3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://ifh.cc/g/8MAt0L.png" alt="img4">
+                        </div>
                     </div>
                 </div>
+
                 <div class="btn">
                     <button class="left_btn">
                         <i class="fa-solid fa-arrow-left"></i>
@@ -78,19 +140,21 @@
 
         <section>
             <div class="item_list">
+
                 <div class="item_box">
                     <div class="item_img">
-                        <a href="cookie_info"><img src='https://ifh.cc/g/hWLlhN.jpg'></a>
+                        <a href="cookie_info"><img src='https://ifh.cc/g/hWLlhN.jpg' width="300px"></a>
                     </div>
                     <div class="item_info">
-                        <div class="name">[주문 폭주!] <br />수제 초콜릿칩 쿠키</div>
+                        <div class="name">[주문 폭주!]<br /> 수제 초콜릿칩 쿠키</div>
                         <div class="where">루피의 쿠키 가게</div>
                         <div class="price">10,000원</div>
                     </div>
                 </div>
+
                 <div class="item_box">
                     <div class="item_img">
-                        <a href="ring_info"><img src='https://ifh.cc/g/Mmy8sY.jpg'></a></a>
+                        <a href="ring_info"><img src='https://ifh.cc/g/Mmy8sY.jpg' width="300px"></a></a>
                     </div>
                     <div class="item_info">
                         <div class="name">실버 반지</div>
@@ -115,12 +179,11 @@
                         <a href="ring_info"><img src='https://ifh.cc/g/Mmy8sY.jpg'></a></a>
                     </div>
                     <div class="item_info">
-                        <div class="name">[선물용으로 좋아요] <br />실버 반지</div>
+                        <div class="name">[선물용으로 좋아요]<br /> 실버 반지</div>
                         <div class="where">뚝딱뚝딱 반지 가게</div>
                         <div class="price">5,000원</div>
                     </div>
                 </div>
-
                 <div class="item_box">
                     <div class="item_img">
                         <a href="cookie_info"><img src='https://ifh.cc/g/hWLlhN.jpg'></a>
