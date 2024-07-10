@@ -1,6 +1,6 @@
 let currentIdx = 0;
 
-const slider_wrap = document.querySelector(".imgaes");
+const slider_wrap = document.querySelector(".images");
 const slider = document.querySelectorAll(".slide");
 const slider_clone = slider_wrap.firstElementChild.cloneNode(true);
 slider_wrap.appendChild(slider_clone);
@@ -20,22 +20,22 @@ function stopSlider() { // 슬라이더 이동 멈춤
     }, 5000);
 }
 
+// 버튼 누르면 반복 잠시 멈추고 다시 실행
+left_btn.addEventListener("click", () => {
+    currentIdx--; // 왼쪽으로 이동
+    moveSlider();
+    stopSlider();
+});
+right_btn.addEventListener("click", () => {
+    currentIdx++; // 오른쪽으로 이동
+    moveSlider();
+    stopSlider();
+});
+
 window.onload = function () {
     setInterval(() => { // 8초에 한번씩 실행
         currentIdx++;
         moveSlider();
-
-        // 버튼 누르면 반복 잠시 멈추고 다시 실행
-        left_btn.addEventListener("click", () => {
-            currentIdx--; // 왼쪽으로 이동
-            moveSlider();
-            stopSlider();
-        });
-        right_btn.addEventListener("click", () => {
-            currentIdx++; // 오른쪽으로 이동
-            moveSlider();
-            stopSlider();
-        });
 
         if (currentIndex == slider.length) {
             stopSlider();
